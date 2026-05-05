@@ -25,6 +25,12 @@ st.markdown("""
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Figtree:wght@300;400;500;600&display=swap');
 
+/* Hide Streamlit elements */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+div[data-testid="stHeader"] {visibility: hidden;}
+
 :root {
   --bg-deep:       #020509;
   --glass-bg:      rgba(8, 20, 40, 0.55);
