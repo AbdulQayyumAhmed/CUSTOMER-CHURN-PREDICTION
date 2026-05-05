@@ -5,7 +5,18 @@ from . import schemas, crud
 
 Base.metadata.create_all(bind=engine)
 
+from fastapi.middleware.cors import CORSMiddleware
+
 app = FastAPI()
+
+# Enable CORS (Required for frontend and backend to communicate across different Hugging Face Spaces)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 # DB Dependency

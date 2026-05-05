@@ -8,7 +8,7 @@ import time
 # ─────────────────────────────────────────────────────────────────────────────
 # CONFIG
 # ─────────────────────────────────────────────────────────────────────────────
-API_BASE = "http://127.0.0.1:8000"
+API_BASE = "https://abdulqayyum360-custoemer-churn-prediction.hf.space"
 
 st.set_page_config(
     page_title="ChurnIQ — Intelligence Platform",
